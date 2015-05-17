@@ -1,0 +1,107 @@
+<div class="article">
+  <!--Date-->
+  <div class="date">
+    <a title="{{ page.title }}" href="{{ page.url }}"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></a>
+  </div>
+  <div class="content clearfix">
+    <div class="eared_switch"></div>
+	<div class="dog_eared">
+	<div class="opt_lst">
+	<a href="javascript:void(0);" class="fav" title="收藏" onclick="addFavorite('{{site.production_url}}{{page.url}}', '{{ page.title }}');">收藏</a>
+	<a href="javascript:void(0);" class="like bdlikebutton" title="喜欢">喜欢</a>
+	<a class="intransit external" target="_blank" title="分享" href="http://service.weibo.com/share/share.php?appkey=1262673699&url={{site.production_url}}{{page.url}}">分享</a>
+	</div>
+	</div>
+   <h2><a class="pjax title" href="{{page.url}}" title="{{ page.title }}">{{ page.title }}</a></h2>
+      {{ content }}
+<div class="social">
+  {% if page.tags %}
+  <span class="tags">
+    {% for tag in page.tags %}
+    <a class="pjax" href="{{site.JB.tags_path}}#{{ tag }}" title="{{ tag }}">≡{{ tag }}</a>
+    {% endfor %}
+  </span>
+  {% endif %}
+  </div>  
+</div>
+<div class="shehuihua">  
+<div id="share_toolbar_wrapper" style="position: static; top: auto; z-index: 9999;background: #ffffff;border-radius: 5px;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity: 0.9;
+opacity: 0.9;padding:20px;margin:20px 0px 20px;">
+<div id="share_toolbar">
+<div class="stb_group" id="stb_article_view">
+<span id="stb_article_view_icon"></span>
+<span id="stb_view_count"><span>分享到</span></span>
+</div>
+<div class="stb_divide"></div>
+<div data="{'url':'{{ site.production_url }}{{ page.url }}'}" class="bdshare_t bds_tools get-codes-bdshare stb_group stb_share_buttons" id="bdshare">
+<a href="javascript:void(0);" id="stb_btn_weibo_small" class="bds_tsina" title="分享到新浪微博"></a>
+<a href="javascript:void(0);" id="stb_btn_tqq_small" post_url="" class="bds_tqq" title="分享到腾讯微博"></a>
+<a href="javascript:void(0);" id="stb_btn_qzone_small" class="bds_qzone" title="分享到QQ空间"></a>
+<a href="javascript:void(0);" id="stb_btn_renren_small" class="bds_renren" title="分享到人人网"></a>
+<span id="stb_btn_more" class="bds_more"><span id="stb_sbtn_more_icon"></span></span>
+<a href="javascript:void(0);" class="shareCount"></a>
+</div>
+<div class="stb_divide"></div>
+
+	{% if page.previous or page.next %}
+<div class="stb_share_buttons stb_group">
+    {% if page.previous %}
+    <a id="stb_btn_prev" class="pjax" href="{{page.previous.url}}" rel="prev" title="上一篇"></a>
+    {% endif %}
+    {% if page.next %}
+    <a id="stb_btn_next" class="pjax" href="{{page.next.url}}" rel="next" title="下一篇"></a>
+    {% endif %}
+</div>
+{% endif %}
+<div class="stb_group_right">
+<div class="stb_like_btn" id="zan_btn">
+<wb:like appkey="1dtQct" type="simple"></wb:like>
+</div>
+<div class="stb_like_btn" id="zan_btn">
+<a version="1.0" class="qzOpenerDiv" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_likeurl" target="_blank">赞</a><script  src="http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js#jsdate=20110603&style=3&showcount=0&width=50&height=30" charset="utf-8" defer="defer" ></script>
+</div>
+<div class="bdlikebutton stb_like_btn bdlikebutton-blue bdlikebutton-small bdlikebutton-small-blue">
+<div class="bdlikebutton-inner">
+<!-- 处理百度like按钮点击和like数量 -->
+<span class="bdlikebutton-add"><div class="bdlikebutton"></div></span>
+<div class="bdlikebutton-count"><script id="bdlike_shell"></script>
+<script>var bdShare_config = {"type":"small","color":"blue","uid":"92742"};
+document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + Math.ceil(new Date()/3600000);</script>
+</div></div></div> </div> </div> </div> 
+<div align="center" style="background: #ffffff;border-radius: 5px;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity: 0.9;
+opacity: 0.9;padding:10px 20px;margin:20px 0px 20px;">
+<!-- nuffnang -->
+<script type="text/javascript">
+nuffnang_bid = "fec22c0e35163c9210543f9044d37191";
+document.write( "<div id='nuffnang_bn'></div>" );
+(function() {	
+var nn = document.createElement('script'); nn.type = 'text/javascript';    
+nn.src = 'http://synad2.nuffnang.com.cn/bn2.js';    
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nn, s.nextSibling);
+})();
+</script>
+<!-- nuffnang-->
+</div>
+
+
+<div align="center" style="background: #ffffff;border-radius: 5px;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity: 0.9;opacity: 0.9;padding:0px 20px 10px;margin:20px 0px 20px;">
+<div id="hm_t_3054"></div>
+</div>
+</div>
+  
+  
+  
+    {% if page.comments %}
+<!-- Duoshuo Comment BEGIN -->
+<div id="comments" class="ds-thread comments" data-thread-key="{{page.wordpress_id}}" data-title="{{ page.title }}" data-url="{{ site.production_url }}{{ page.url }}"></div>
+<!-- Duoshuo Comment END2 -->
+    {% else %}
+        <div class="nocomment"></div>
+    {% endif %}
+</div>
+      {% if page.previous %}
+<span id="btn_page_prev"><a href="{{page.previous.url}}" rel="prev"><span id="fanye" style="display: none;">‹</span></a></span>
+      {% endif %}
+      {% if page.next %}
+<span id="btn_page_next"><a href="{{page.next.url}}" rel="next"><span id="fanye" style="display: none;">›</span></a></span>
+      {% endif %}

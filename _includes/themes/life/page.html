@@ -1,0 +1,25 @@
+<div class="post mt-2" id="duoshuo" data-thread-key="{{page.postid}}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}">
+	<div class="info box">
+		<a class="date" href="{{ page.url }}">
+		<span class="day">{{ page.date | date:"%d" }}</span><span class="month">{{ page.date | date:"%b" }}</span>
+		<span class="circle"></span>
+		</a>
+	</div>
+	<div class="article">
+		<h3><a class="title font-orange mb-2  pjax" href="{{ page.url }}" title="{{ page.title }} | {{ site.title }}">{{ page.title }}</a></h3>
+		<div class="content lh-150p font-16 pd-1 mg-2 radius-7">
+		{{ content }}
+		</div>
+	</div>
+	{% if page.comments %}
+	<div id="comments" class="cleared mt-2 pl-2 pr-2">
+		<div class="comment left w-60 h-60">
+		<a class="yuan" id="dsnum" href="{{ post.url }}#comments">
+		<span class="circle"></span>
+		</a>
+	</div>
+	</div>
+    {% endif %}
+</div>
+	<div class="clear"></div>
+</div>

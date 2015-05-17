@@ -1,0 +1,31 @@
+<div class="post mt-2">
+	<div class="info box">
+		<a class="date" href="{{ page.url }}">
+		<span class="day">22</span><span class="month">May</span>
+		<span class="circle"></span>
+		</a>
+	</div>
+	<div class="article">
+		<h3><a class="title font-orange mb-2  pjax" href="{{ page.url }}" title="{{ page.title }} | {{ site.title }}">{{ page.title }}</a></h>
+		<div class="content lh-200p font-16 pd-1 mg-2 radius-7">
+			<div id='tag_cloud'>
+				{% for tag in site.tags %}
+				<a href="#{{ tag[0] }}" class="button button-small button-orange mt-1" title="{{ tag[0] }} | {{ site.title }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+				{% endfor %}
+			</div>
+			<ul class="archives no-list">
+			{% for tag in site.tags %}
+			<div id="{{ tag[0] }}" class="msg msg-orange mt-1 mb-1"><a href="#{{ tag[0] }}"  title="{{ tag[0] }} | {{ site.title }}" >{{ tag[0] }}</a></div>
+				{% for post in tag[1] %}
+				<li class="listing-item">
+				<span>{{ post.date | date:"%Y-%m-%d" }}</span>
+				<a class="font-orange atitle pjax" href="{{ post.url }}" title="{{ post.title }} | {{ site.title }}">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+	<div class="clear"></div>
+</div>

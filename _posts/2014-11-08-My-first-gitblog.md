@@ -1,0 +1,25 @@
+---
+author: itxuye
+comments: true
+date: 2014-11-08 17:25:08 +0800
+layout: post
+slug: My-first-gitblog
+title: 在Github上的第一篇博客
+postid: 01
+categories: 
+- 生活闲扯
+tags:
+ - life
+---
+
+### My First GitBlog
+不知道是我的人品不好，还是我的电脑太渣，装个开源的东西，每次都是问题百出，这次更坑爹的还是因为版本过高的问题，百度了半天，对这个问题都没有人提到过，所以我建议这些问题最好去谷歌。
+<!-- more -->
+刚开始学习markdown语法，基本会了一点，估计写出来，效果不是特别好，等会好好去看看。git的指令也是我有时候会出错，等会也去看下具体的吧。  
+关于这次博客的搭建，我很感谢我的朋友顾骏的帮助和建议，我准备下篇博客专门写一个关于我安装过程中遇到的问题，真的是各种问题都有了，也谢谢刘宇霆学长以前在一些学习问题上的帮助。
+
+---
+
+> [顾骏的博客：http://www.2dxgujun.com](http://www.2dxgujun.com/)
+
+> [刘宇霆的博客：http://www.yee4.com](http://www.yee4.com/) 

@@ -1,0 +1,19 @@
+---
+title: all
+layout: json
+---
+{
+	"name":"{{ site.title }}",
+	"posts":[
+	{% for post in site.posts limit:10 %}
+	{
+		"title":"{{ post.title }}",
+		"datetime":"{{ post.date }}",
+		"category":"{{ post.categories }}",
+		"tags":"{{ post.tags }}",
+		"href":"{{ post.slug }}",
+		"content":"{{ post.content | xml_escape | replace:'\r\n',' ' | replace:'\n',' ' }}"
+	},
+	{% endfor %}
+	]
+}

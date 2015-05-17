@@ -1,0 +1,15 @@
+<div class="article">
+  {% if page.title %}
+  <div class="title">
+    <h2>{{ page.title }} </h2>
+  </div>
+  {% endif %}
+  <div class="post">
+  {{ content }}
+  </div>
+  {% if page.comment %}
+      <div class="comment" data-thread="{{page.pid}}"></div>
+  {% else %}
+      <div class="comment"><hr /><p>评论已关闭</p></div>
+  {% endif %}
+</div>

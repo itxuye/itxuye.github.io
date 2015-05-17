@@ -1,0 +1,17 @@
+<div class="post mt-2">
+	<div class="info box">
+		<a class="date" href="{{ page.url }}">
+		<span class="day">{{ page.date | date:"%d" }}</span><span class="month">{{ page.date | date:"%b" }}</span>
+		<span class="circle"></span>
+		</a>
+	</div>
+	<div class="article">
+		<h3><a class="title font-orange mb-2" href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h>
+		<div class="content lh-150p font-16 pd-1 mg-2 radius-7">
+		{{ content }}
+		</div>
+	</div>
+</div>
+	<div class="clear"></div>
+</div>
+

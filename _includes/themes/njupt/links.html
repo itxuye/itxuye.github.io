@@ -1,0 +1,17 @@
+<div class="article">
+  <!--Date-->
+  <div class="content clearfix">
+	  
+    <h2><a class="pjax title" href="{{site.production_url}}{{page.url}}" title="{{ page.title }}">{{ page.title }}</a></h2>
+      {{ content }}
+ 
+  </div>
+    
+    {% if page.comments %}
+<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread comments" data-thread-key="{{page.wordpress_id}}" data-title="{{ page.title }}" data-url="{{ site.production_url }}{{ page.url }}"></div>
+<!-- Duoshuo Comment END -->
+    {% else %}
+        <div class="nocomment"></div>
+    {% endif %}
+</div>

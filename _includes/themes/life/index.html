@@ -1,0 +1,18 @@
+{% for post in paginator.posts %}
+<div class="post mt-2">
+	<div class="info box">
+		<a class="date" href="{{ post.url }}">
+		<span class="day">{{ post.date | date:"%d" }}</span><span class="month">{{ post.date | date:"%b" }}</span>
+		<span class="circle"></span>
+		</a>
+	</div>
+	<div class="article">
+		<h3><a class="title font-orange mb-2 pjax" href="{{ post.url }}" title="{{ post.title }} | {{ site.title }}">{{ post.title }}</a></h3>
+		<div class="content lh-150p font-16 mg-2 radius-8">
+		{{ post.content | | split:'<!-- more -->' | first }}
+		<a href="{{ post.url }}" title="{{ post.title }} | {{ site.title }}" class="more-link button button-orange radius-4 right mt-1 pjax">查看全文</a>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+{% endfor %}

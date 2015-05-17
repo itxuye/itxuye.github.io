@@ -1,0 +1,31 @@
+permalink: /:title.html
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+highlighter: pygments
+markdown: rdiscount
+paginate: 7
+safe: true
+future: false
+timezone: Asia/Shanghai
+
+title : Itxuye
+keywords: "生活,记忆,生活记忆,人生就像那旅程,谁知道转弯后的风光"
+description : "人生就像那旅程,谁知道转弯后的风光"
+author :
+  name : itxuye
+  email : itxuye@gmail.com
+  github : itxuye
+  twitter : itxuye
+url : http://www.itxuye.com/
+
+JB :
+  BASE_PATH : false
+  ASSET_PATH : false
+  archive_path: /archives.html
+  about_path: /about.html
+  links_path: /links.html
+  tags_path : /tags.html
+  atom_path : /atom.xml
+  rss_path : /rss.xml
+  sitemap_path : /sitemap.xml
+  search_path : /search.html
+  guestbook_path : /guestbook.html

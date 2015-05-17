@@ -1,0 +1,26 @@
+<div class="article">
+  {% if page.title %}
+  <div class="title">
+    <h2>{{ page.title }} </h2>
+  </div>
+  {% endif %}
+  <div class="post">
+    <div id='tag_cloud'>
+    {% for node in site.categories %}
+    <a href="#{{ node[0] }}" title="{{ node[0] }}" rel="{{ node[1].size }}">{{ node[0] }}</a>
+    {% endfor %}
+    </div>
+
+    <ul class="listing">
+    {% for node in site.categories %}
+      <div class="anchorouter"><a href="#{{ node[0] }}" class="anchor"><span class="icon-hand-right anchor"></span></a><li class="listing-seperator" id="{{ node[0] }}">{{ node[0] }}</li></div>
+    {% for post in node[1] %}
+      <li class="listing-item">
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+      <a class="pjax" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    {% endfor %}
+    </ul>
+  </div>
+</div>

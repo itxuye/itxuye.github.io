@@ -1,0 +1,68 @@
+<div class="post mt-2" id="duoshuo" data-thread-key="{{page.postid}}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}">
+	<div class="info box">
+		<a class="date" href="{{ page.url }}">
+		<span class="day">{{ page.date | date:"%d" }}</span><span class="month">{{ page.date | date:"%b" }}</span>
+		<span class="circle"></span>
+		</a>
+	</div>
+	<div class="article">
+		<h3><a class="title font-orange mb-2" href="{{ page.url }}" title="{{ page.title }} | {{ site.title }}">{{ page.title }}</a></h3>
+		<div class="content lh-150p font-16 pd-1 pb-0 mg-2 mb-0 radius-8" data-swiftype-index="true">
+		{{ content }}
+		</div>
+		<div class="post-end mb-2"><span><i class="icon-heart"></i>{{ page.date | date_to_long_string }}</span></div>
+	</div>
+	{% if page.tags %}
+	<div class="tags pl-2 pr-2 mb-2 left">
+		<span class="tag"><i class="icon-tags"></i>标签：
+		{% for tag in page.tags %}
+		<a class="button button-small button-orange" href="{{site.JB.tags_path}}#{{ tag }}" title="{{ tag }} | {{ site.title }}">{{ tag }}</a>
+		{% endfor %}
+		</span>
+	</div>
+	{% endif %}
+	{% if page.categories %}
+	<div class="categories pl-2 pr-2 mb-2 right">
+		<span class="categorie"><i class="icon-cat"></i>分类：
+		{% for categorie in page.categories %}
+		<a class="button button-small button-orange pjax" href="/archives.html#{{ categorie }}" title="{{ categorie }} | {{ site.title }}">{{ categorie }}</a>
+		{% endfor %}
+		</span>
+	</div>
+	{% endif %}
+	{% if page.previous or page.next %}
+	<div class="cleared mt-2 pl-2 pr-2">
+		{% if page.previous %}
+		<a class="button button-orange left pjax" href="{{page.previous.url}}" rel="prev" title="{{page.previous.title}} | {{ site.title }}"><i class="icon-left"></i>{{page.previous.title}}</a>
+		{% endif %}
+		{% if page.next %}
+		<a class="button button-orange right pjax" href="{{page.next.url}}" rel="next" title="{{page.next.title}} | {{ site.title }}">{{page.next.title}}<i class="icon-right"></i></a>
+		{% endif %}
+	</div>
+	{% if page.previous %}
+	<span id="btn_page_prev"><a href="{{page.previous.url}}" class="pjax" title="{{page.previous.title}} | {{ site.title }}" rel="prev"><span id="fanye" style="display: none;">‹</span></a></span>
+	{% endif %}
+	{% if page.next %}
+	<span id="btn_page_next"><a href="{{page.next.url}}" class="pjax" title="{{page.next.title}} | {{ site.title }}" rel="next"><span id="fanye" style="display: none;">›</span></a></span>
+	{% endif %}
+	{% endif %}
+	<div id="hm_t_18226" class="radius-8 baidu">
+	</div>
+	<script>
+		$(document).ready(function() {
+			$('.hm-t-img').addClass('pjax');
+		});
+	</script>
+	{% if page.comments %}
+	<div id="comments" class="cleared mt-2 pl-2 pr-2">
+		<div class="comment left w-60 h-60">
+		<a class="yuan" id="dsnum" href="{{ post.url }}#comments">
+		<span class="circle"></span>
+		</a>
+	</div>
+	</div>
+    {% endif %}
+</div>
+	<div class="clear"></div>
+</div>
+{% include share.html %}
