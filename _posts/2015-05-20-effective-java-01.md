@@ -31,7 +31,7 @@ String s1 = "hello world";
 public class Person{
     private final Date birthday;
     //不要这样使用
-    public boolean isBiggerThanChina(){
+    public boolean isBiggerThanMe(){
         Calendar gmtCal = Calendar.getInstance(TimeZone.getTimeZone("GMY"));
         gmtCal.set(1949,Calendar.October,1,0,0,0);
         Date MyBirthday = gmtCal.getTime();
@@ -44,13 +44,13 @@ public class Person{
 public class Person{
     private final Date birthday;
     //使用静态代码初始化，实例只被创建一次
-    private static final Date chinaBirthday;
+    private static final Date MyBirthday;
     static {
         Calendar gmtCal = Calendar.getInstance(TimeZone.getTimeZone("GMY"));
         gmtCal.set(1949,Calendar.October,1,0,0,0);
         Date MyBirthday = gmtCal.getTime();
     }
-    public boolean isBiggerThanChina(){
+    public boolean isBiggerThanMe(){
         Calendar gmtCal = Calendar.getInstance(TimeZone.getTimeZone("GMY"));
         gmtCal.set(1949,Calendar.October,1,0,0,0);
         Date MyBirthday = gmtCal.getTime();
