@@ -206,5 +206,5 @@ eventbus（集成一个开源的框架）
 
 一系列工具类
 
-类似的框架还有Retrofit、OkHttp 等，这里就不一一做介绍了.
+类似的框架还有Retrofit、OkHttp、eventbus 等，这里就不一一做介绍了.
 
