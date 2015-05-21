@@ -12,7 +12,7 @@ tags:
 - java
 ---  
 所以类的基类是java.lang.Object类，在Object类提供了一个toString()方法的一个实现。该方法返回该对象的字符串表示，通常会返回一个“以文本方式表示”此对象的字符串，由类的名称，以及一个“@”符号，接着是散列码的无符号十六进制表示法。（***getClass().getName() + "@" + Integer.toHexString(hashCode())***）  
-  
+<!-- more -->  
 例如，像这样的 com.itxuye.CompareTest@659e0bfd。但是这样，并不简洁到让人明白传递了什么信息。  
    
 所以java文档中建议所以的子类都覆盖这个方法，应该返回对象中值得关注的信息。例如这样的:itxuye [name=" + name + ", id=" + id + "]".  
