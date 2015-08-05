@@ -1,5 +1,3 @@
 User-agent: *
 Allow:　/
-User-agent: Swiftbot
-allow:/
 Sitemap: http://itxuye.com/sitemap.xml
