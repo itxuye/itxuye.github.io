@@ -4,7 +4,7 @@ comments: true
 date: 2015-03-06 20:11:08 +0800
 layout: post
 slug: android-framework
-title: Android常用框架整理
+title: Android常用框架整理(转)
 postid: 19
 categories: 
 - android
