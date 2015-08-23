@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://itxuye.com/sitemap.xml
+Sitemap: http://www.itxuye.com/sitemap.xml
