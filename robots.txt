@@ -1,3 +1,2 @@
 User-agent: *
-Allow:　/
 Sitemap: http://itxuye.com/sitemap.xml
