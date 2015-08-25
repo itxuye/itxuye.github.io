@@ -4,31 +4,160 @@ title : sitemap
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>http://itxuye.com</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
-    </url>
-    {% for post in site.posts %}
-    <url>
-        <loc>http://itxuye.com{{ post.url | remove: 'index.html' }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    {% endfor %}
-
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
-    <url>
-        <loc>http://itxuye.com{{ page.url | remove: 'index.html' }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+<url>
+<loc>http://www.itxuye.com/</loc>
+<priority>1.0</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/android-framework.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Android-Json.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/android-network-httpclient.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/android-network-httpurlconnection.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/android-network-httpurlcoonection-httpclient.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/android-network-pull-xml.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/android-network-sax-xml.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/android-network-webview.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Android-Parcel.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Android-Studio-Tools.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/archives.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Desigh-Pattern.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Design-Pattern.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/GIT-SVN.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/guestbook.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Highlight-Code.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Jquery-Resources.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/links.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Markdown.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/My-first-gitblog.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/tags.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Year-Summary.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/Z-Gradle.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/page2/</loc>
+<priority>0.6</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.itxuye.com/page3/</loc>
+<priority>0.6</priority>
+<lastmod>2015-08-23T08:05:41+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
 </urlset>
