@@ -43,7 +43,16 @@ public class Person  implements Serializable{
 
 activity代码：
 
-<iframe width="100%" height="200" src="http://gist.stutostu.com/itxuye/614722b317fe9e8552f1.pibb" frameborder=0 ></iframe>
+{% highlight java %} 
+ String gender=sex.isChecked()?"男":"女";
+     Person p=new Person(editname.getText().toString()
+     editpwd.getText().toString(),gender);
+	 Bundle data=new Bundle();
+	 data.putSerializable("person", p);
+     Intent intent=new Intent(FirstActivity.this,ResultActivity.class);
+	 intent.putExtras(data);
+	 startActivity(intent);
+{% endhighlight %}
 
 ###andoid中的Parcel机制
 在**Android**系统中，定位为针对内存受限的设备，因此对性能要求更高，另外系统中采用了新的**IPC**（**进程间通信**）机制，必然要求使用性能更出色的对象传输方式。在这样的环境下，**Parcel**被设计出来，其定位就是轻量级的高效的对象序列化和反序列化机制。
@@ -56,11 +65,64 @@ activity代码：
 
 **Parcel**示例代码：
 
-activity代码：
-<iframe width="100%" height="200" src="http://gist.stutostu.com/itxuye/4d965d842929f904e708.pibb" frameborder=0 ></iframe>
+{% highlight java %}
+Intent mIntent =newIntent(this,ParcelableDemo.class);   
+        Bundle mBundle =newBundle();   
+        mBundle.putParcelable(PAR_KEY, mPolice);   
+        mIntent.putExtras(mBundle);   
+{% endhighlight %}
 
 实体类：
-<iframe width="100%" height="200" src="http://gist.stutostu.com/itxuye/b3380cd04ce41c8e2496.pibb" frameborder=0 ></iframe>  
+{% highlight java %}
+public class Police implements Parcelable {
+        
+    private String name;
+    private int workTime;
+    
+    public String getName() {
+        returnname; 
+    } 
+    
+    public void setName(String name) {
+        this.name = name;
+    } 
+    
+    public int getWorkTime() { 
+        returnworkTime; 
+    } 
+    
+    public void setWorkTime(int workTime) {
+        this.workTime = workTime;
+    } 
+        
+    public static final Parcelable.Creator<Police> CREATOR =newCreator<Police>() {
+    
+        @Override 
+        public Police createFromParcel(Parcel source) {
+            Police police =newPolice();
+            police.name = source.readString();
+            police.workTime = source.readInt();
+            returnpolice; 
+        } 
+    
+        @Override 
+        public Police[] newArray(int size) {
+            returnnewPolice[size];
+        } 
+    }; 
+    
+    @Override 
+    public int describeContents() { 
+        return0; 
+    } 
+    
+    @Override 
+    public void writeToParcel(Parcel parcel, int flags) {
+        parcel.writeString(name);
+        parcel.writeInt(workTime);
+    } 
+} 
+{% endhighlight %}
 
 
 本文永久链接[itxuye](http://www.itxuye.com/Android-Parcel.html),可随意copy文中代码，转载请注明出处！
