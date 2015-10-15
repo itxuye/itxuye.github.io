@@ -435,7 +435,7 @@ $(document).ready(function() {
 });
 
 
-/*  var Swiftype = window.Swiftype || {};
+ var Swiftype = window.Swiftype || {};
 	Swiftype.key = 'TBNf6zuGci7Uy_As3JK6';
 	(function() {
 	    var script = document.createElement('script');
@@ -445,7 +445,7 @@ $(document).ready(function() {
 		var entry = document.getElementsByTagName('script')[0];
 		entry.parentNode.insertBefore(script, entry);
 	}());  
-	*/
+	
 	
 
 if (window.console && window.console.log) {
