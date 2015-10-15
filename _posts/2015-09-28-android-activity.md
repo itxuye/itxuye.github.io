@@ -5,7 +5,7 @@ date: 2015-09-16 10:22:08 +0800
 layout: post
 slug: android-activity
 title: Activity详细总结
-postid: 24
+postid: 1123
 categories: 
 - android
 tags:
@@ -204,9 +204,9 @@ Activity是android四大组件中使用频率最为频繁的组件，相当于�
 ####singleTop
 系统会先判断栈顶的Activity是否是要启动的Activity，如果是，则调用onNewIntent()方法，不再生成实例，启动栈顶的实例。如果不是，则会创建新的实例，那么下次则不会创建新的实例。适用于类似QQ信息的弹窗。
 ####singleTask  
-如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的 onNewIntent() )。重用时，会让该实例回到栈顶，因此在它上面的实例将会被移出栈。如果栈中不存在该实例，将会创建新的实例放入栈中。singleTask 模式可以用来退出整个应用。将主Activity设为SingTask模式，然后在要退出的Activity中转到主Activity，然后重写主Activity的onNewIntent函数，并在函数中加上一句finish。  
+如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的 onNewIntent())。重用时，会让该实例回到栈顶，因此在它上面的实例将会被移出栈。如果栈中不存在该实例，将会创建新的实例放入栈中。singleTask 模式可以用来退出整个应用。将主Activity设为SingTask模式，然后在要退出的Activity中转到主Activity，然后重写主Activity的onNewIntent函数，并在函数中加上一句finish。  
 ####singleInstance  
-在一个新栈中创建该Activity的实例，并让多个应用共享该栈中的该Activity实例。一旦该模式的Activity实例已经存在于某个栈中，任何应用再激活该Activity时都会重用该栈中的实例( 会调用实例的 onNewIntent()。其效果相当于多个应用共享一个应用，不管谁激活该 Activity 都会进入同一个应用中。
+在一个新栈中创建该Activity的实例，并让多个应用共享该栈中的该Activity实例。一旦该模式的Activity实例已经存在于某个栈中，任何应用再激活该Activity时都会重用该栈中的实例( 会调用实例的 onNewIntent())。其效果相当于多个应用共享一个应用，不管谁激活该 Activity 都会进入同一个应用中。
   
 ###Intent Flag启动模式
  1.FLAG_ACTIVITY_NEW_TASK   
