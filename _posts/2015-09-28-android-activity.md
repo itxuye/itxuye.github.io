@@ -16,7 +16,7 @@ Activity是android四大组件中使用频率最为频繁的组件，相当于�
 
 ###Activity的生命周期
 学习新的知识是可以类比的，以前在学习servlet的时候，就知道servlet有lifecycle，都有一系列创建实例，初始化，销毁的过程。同样，activity也是具有自己的lifecycle，android官网关于生命周期有一张经典的图：
-![http://7s1s78.com1.z0.glb.clouddn.com/activity_lifecycle.png](http://7s1s78.com1.z0.glb.clouddn.com/activity_lifecycle.png)
+[![Activity](http://7s1s78.com1.z0.glb.clouddn.com/activity_lifecycle.png)](http://7s1s78.com1.z0.glb.clouddn.com/activity_lifecycle.png)
 <!-- more -->    
 {% highlight java %}
     /**
