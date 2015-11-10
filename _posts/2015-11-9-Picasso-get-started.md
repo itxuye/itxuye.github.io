@@ -3,7 +3,7 @@ author: itxuye
 comments: true
 date: 2015-11-10 14:29:08 +0800
 layout: post
-slug: picasso-1
+slug: picasso-get-started
 title: (译)Picasso-入门
 postid: 1125
 categories: 
@@ -12,7 +12,7 @@ tags:
 - android
 - Picasso
 ---  
-这是Android Picasso 开源库的一系列翻译文章,翻译错误或者不当之处请在下方留言。  
+这是Square Picasso 图片加载开源库使用的一系列翻译文章,翻译错误或者不当之处请在下方留言。  
   
 你可以移动鼠标到上方的归档选择这一系列的文章进行阅读。  
   
@@ -63,10 +63,10 @@ String internetUrl = "http://i.imgur.com/DvpvklR.png";
 Picasso
     .with(context)
     .load(internetUrl)
-    .into(targetImageView); 
+    .into(targetImageView);  
 {% endhighlight %} 
   
 就是这样!如果图像URL存在和你ImageView可见的话,你会在几秒钟后看到图像。如果图像不存在,picasso将返回错误回调,我们以后会提到。通过这三行代码你可能已经相信picasso库对你是有用的,但这些特性只是冰山一角。  
   
   
-本文永久链接[http://itxuye.com/picasso-1.html](http://itxuye.com/picasso-1.html),转载请注明出处，欢迎交流讨论。  
+本文永久链接[http://itxuye.com/picasso-get-started.html](http://itxuye.com/picasso-get-started.html),转载请注明出处，欢迎交流讨论。  
