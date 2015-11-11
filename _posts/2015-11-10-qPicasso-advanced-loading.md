@@ -3,7 +3,7 @@ author: itxuye
 comments: true
 date: 2015-11-10 14:29:08 +0800
 layout: post
-slug: picasso-advanced-loading
+slug: qpicasso-advanced-loading
 title: (译)Picasso-高级加载
 postid: 1126
 categories: 
@@ -12,7 +12,7 @@ tags:
 - android
 - Picasso
 --- 
-这是Square Picasso 图片加载开源库使用的一系列翻译文章,翻译错误或者不当之处请在下方留言。  
+这是Square Picasso 图片加载开源库使用的一系列翻译文章,记录作为个人学习资料，翻译错误或者不当之处请在下方留言。  
   
 你可以移动鼠标到上方的归档选择这一系列的文章进行阅读。  
   
