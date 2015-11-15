@@ -1,7 +1,7 @@
 ---
 author: itxuye
 comments: true
-date: 2015-11-11 9:19:08 +0800
+date: 2015-11-13 9:19:08 +0800
 layout: post
 slug: tPicasso-Resizing-Scaling-and-fit
 title: (译)Picasso-Image Resizing, Scaling and fit()操作
