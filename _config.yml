@@ -17,6 +17,8 @@ author :
   twitter : itxuye
 url : http://itxuye.com/
 
+excerpt_separator: ""
+
 JB :
   BASE_PATH : false
   ASSET_PATH : false
