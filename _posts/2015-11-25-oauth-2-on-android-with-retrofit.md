@@ -1,9 +1,9 @@
 ---
 author: itxuye
 comments: true
-date: 2015-11-21 15:46:08 +0800
+date: 2015-11-25 15:46:08 +0800
 layout: post
-slug: oauth-2-on-android-with-retrofit
+slug: retrofit-token-authentication-on-android
 title: (译)Retrofit-Android上的基本身份验证
 postid: 1136
 categories: 
@@ -21,7 +21,9 @@ tags:
 Retrofit系列中的这篇文章描述和说明了如何验证一个OAuth API在你的Android应用程序。让我们先从本系列中以前的文章的概述开始。   
   
 这篇文章对OAuth本身不会详细赘述。它只是提出了基本原则和必要的细节了解身份验证流。  
-  
+
+<!-- more --> 
+
 ###OAuth基础知识   
   
 OAuth是一个基于token授权方法，它使用一个访问token来完成API与用户之间的互动。OAuth要求几个步骤来访问API来获得你的token。  
@@ -351,4 +353,4 @@ protected void onResume() {
 享受任何OAuth身份验证API。如果你遇到问题或问题,就通过@futurstud_io联系我们。  
   
   
-本文永久链接[http://itxuye.com/oauth-2-on-android-with-retrofit.html](http://itxuye.com/oauth-2-on-android-with-retrofit.html),转载请注明出处，欢迎交流讨论。 
+本文永久链接[http://itxuye.com/retrofit-token-authentication-on-android.html](http://itxuye.com/retrofit-token-authentication-on-android.html),转载请注明出处，欢迎交流讨论。 
