@@ -319,7 +319,7 @@ task :deploy do
   message = ENV["message"] || "Empty Message"
   system "git commit -m \"#{message}\""
   puts "Publishing to Github"
-  system "git push github master"
+  system "git push origin master"
   #puts "Publishing to GitCafe"
   #system "git push gitcafe master:gitcafe-pages"
   puts "Your website is now published"
