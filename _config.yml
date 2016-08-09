@@ -1,6 +1,6 @@
 permalink: /:title.html
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+highlighter: rouge
 markdown: rdiscount
 paginate: 7
 safe: true
