@@ -320,7 +320,7 @@ task :deploy do
   system "git commit -m \"#{message}\""
   puts "Publishing to Github"
   system "git push github master"
-  puts "Publishing to GitCafe"
-  system "git push gitcafe master:gitcafe-pages"
+  #puts "Publishing to GitCafe"
+  #system "git push gitcafe master:gitcafe-pages"
   puts "Your website is now published"
 end
