@@ -22,10 +22,10 @@ tags:
   
 <!-- more -->   
   
-###Integrate Token Authentication  
+### Integrate Token Authentication  
 如果你读前面的帖子关于使用retrofit的身份验证,你会猜到我们要怎么做:扩展ServiceGenerator类和集成方法处理token认证。让我们直接与第二个扩展ServiceGenerator createService方法:  
   
-####Retrofit 1.9
+#### Retrofit 1.9
 {% highlight java %}
 public class ServiceGenerator {
 
@@ -55,7 +55,7 @@ public class ServiceGenerator {
 }  
 {% endhighlight %} 
   
-####Retrofit 2  
+#### Retrofit 2  
 
 {% highlight java %}
 public class ServiceGenerator {
@@ -101,11 +101,11 @@ public class ServiceGenerator {
   
 从现在开始,每一个HTTP客户端创建该方法集成了令牌授权头字段的值,并自动传递token值与任何请求API端点。  
   
-###Example Usage  
+### Example Usage  
   
 让我们创建一个例子,看看一些代码。下面的UserService接口声明一个方法叫me()。这个示例方法返回一个用户对象从API创建响应。  
   
-####Retrofit 1.9
+#### Retrofit 1.9
 {% highlight java %}
 public interface UserService {  
     @POST("/me")
@@ -113,7 +113,7 @@ public interface UserService {
 }  
 {% endhighlight %}    
 
-####Retrofit 2
+#### Retrofit 2
 {% highlight java %}
 public interface UserService {  
     @POST("/me")
@@ -123,14 +123,14 @@ public interface UserService {
   
 要特殊照顾调用API等待在终点HTTP任何要求：//your.api-base.url/me并要求身份验证以获取用户数据的响应。现在，让我们创建一个用户服务对象，做实际的请求 .  
   
-####Retrofit 1.9
+#### Retrofit 1.9
 {% highlight java %}
 UserService userService =  
     ServiceGenerator.create(UserService.class, "auth-token");
 User user = userService.me();  
 {% endhighlight %}   
     
-####Retrofit 2
+#### Retrofit 2
 {% highlight java %}
 UserService userService =  
     ServiceGenerator.create(UserService.class, "auth-token");
