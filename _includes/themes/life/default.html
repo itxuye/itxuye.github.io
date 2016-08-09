@@ -15,9 +15,9 @@
 	<meta name="keywords" content="{% if page.tags and page.tags != '' %}{{ page.tags }},{% else %}{{ site.keywords }}{% endif %}" />
 	<meta name="description" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
 	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% if page.is_index %}(XuYe){% endif %}</title>
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/kimochi.css" media="all"/>
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/pyments.css" media="all"/>
-	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css" media="all"/>
+	<link rel="stylesheet" href="{{ ASSET_PATH }}css/kimochi.css" media="all"/>
+	<link rel="stylesheet" href="{{ ASSET_PATH }}css/pyments.css" media="all"/>
+	<link rel="stylesheet" href="{{ ASSET_PATH }}css/style.css" media="all"/>
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link href="http://www.itxuye.com/rss.xml" type="application/rss+xml" rel="alternate" title="Itxuye RSS Feed" />
 	<link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Itxuye ATOM Feed" />
@@ -25,7 +25,7 @@
 	{% if page.date %}
     <meta property='st:published_at' content='{{ page.date | date_to_xmlschema }}' />
     {% endif %}
-	<script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ ASSET_PATH }}js/jquery.min.js"></script>
 	
 </head>
 <body>
