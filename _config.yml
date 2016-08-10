@@ -1,8 +1,12 @@
 permalink: /:title.html
+# Gems
+gems:
+  - jekyll-paginate
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 markdown: kramdown
 paginate: 7
+paginate_path: 'page:num'
 safe: true
 future: false
 timezone: Asia/Shanghai
