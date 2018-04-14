@@ -1,0 +1,105 @@
+			.words {
+				position: absolute;
+				left: 0;
+				top: 8%;
+				width: 100%;
+				padding-left: 8%;
+				padding-right: 8%;
+				line-height: 20px;
+				font-size: 21px;
+				color: #FFF;
+			}
+
+			.words .left{
+				left: 500px;
+			}
+			.words .right{
+				right: 100px;
+			}
+			.words .bottom{
+				bottom: 100px;
+			}
+			.words .black{
+				color: #000000;
+			}
+
+
+			.fuzzy {
+				-moz-filter: blur(0px);
+		    	-webkit-filter: blur(0px);
+		        -o-filter: blur(0px);
+		        -ms-filter: blur(0px);
+		        filter: blur(0px)
+			}
+
+			.down {
+			    position: absolute;
+			    bottom: 10px;
+			    left: 50%;
+			    width: 30px;
+			    margin-left: -15px;
+			    height: 26px;
+			    -webkit-animation: opa_btm 1.5s ease-in-out;
+			    animation: opa_btm 1.5s ease-in-out
+			}
+			.down samp {
+			    display: inline-block;
+			    width: 30px;
+			    height: 26px;
+			    -moz-animation: start 1.5s infinite ease-in-out;
+			    -webkit-animation: start 1.5s infinite ease-in-out;
+			    -o-animation: start 1.5s infinite ease-in-out;
+			    -ms-animation: start 1.5s infinite ease-in-out;
+			    animation: start 1.5s  infinite ease-in-out;
+			    /*background: url(http://p3.ucai.cn/static//i3/special/c2/down.gif)center no-repeat*/
+			}
+
+			@-webkit-keyframes opa_btm{
+				0%, 25%{
+					opacity: 0;
+					-webkit-transform: translate(0, 20px);
+				}
+			}
+			@keyframes opa_btm{
+				0%, 25%{
+					opacity: 0;
+					transform: translate(0, 20px);
+				}
+			}
+			@-webkit-keyframes start {
+				0%, 30%{
+					opacity: 0;
+					-webkit-transform: rotate(180deg) trnaslate(0, -10px)
+				}
+				60%{
+					opacity: 1;
+					-webkit-transform: rotate(180deg) translate(0, 0)
+				}
+				100%{
+					opacity: 0;
+					-webkit-transform: rotate(180deg) translate(0, 5px);
+				}
+			}
+			@keyframes start{
+				0%, 30%{
+					opacity: 0;
+					transform: rotate(180deg) translate(0, -10px)
+				}
+				60%{
+					opacity: 1;
+					transform: rotate(180deg) translate(0, 0)
+				}
+				100%{
+					opacity: 0;
+					transform: rotate(180deg) translate(0, 5px)
+				}
+			}
+
+			img {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				vertical-align: middle;
+			}
