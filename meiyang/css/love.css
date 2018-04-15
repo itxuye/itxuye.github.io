@@ -1,3 +1,6 @@
+			.section{
+
+			}
 			.words {
 				position: absolute;
 				left: 0;
@@ -7,7 +10,7 @@
 				padding-right: 8%;
 				line-height: 20px;
 				font-size: 21px;
-				color: #FFF;
+				color:#b8e9bd;
 			}
 
 			.words .left{
@@ -103,3 +106,4 @@
 				height: 100%;
 				vertical-align: middle;
 			}
+	
